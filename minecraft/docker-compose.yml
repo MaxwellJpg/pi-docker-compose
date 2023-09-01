@@ -13,3 +13,13 @@ services:
       - ./data:/data
     stdin_open: true
     tty: true
+  bedrock-connect:
+    container_name: bedrock-connect
+    build:
+      context: /home/max/Documents/pi-docker-compose/minecraft
+      dockerfile: ./Dockerfile
+    volumes:
+      - /home/max/Documents/pi-docker-compose/minecraft/custom_servers.json:/brc/custom_servers.json
+    ports:
+      - 19132:19132/udp
+    restart: unless-stopped
