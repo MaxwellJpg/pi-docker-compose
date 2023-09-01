@@ -1,0 +1,8 @@
+[
+	{
+		"name": "Custom Server",
+		"iconUrl": "https://i.imgur.com/FUzSLeu.jpeg",
+		"address": "http://192.168.1.168",
+		"port": 19132
+	}
+]
