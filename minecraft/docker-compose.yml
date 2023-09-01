@@ -21,5 +21,5 @@ services:
     volumes:
       - /home/max/Documents/pi-docker-compose/minecraft/custom_servers.json:/brc/custom_servers.json
     ports:
-      - 19132:19132/udp
+      - 19133:19133/udp
     restart: unless-stopped
