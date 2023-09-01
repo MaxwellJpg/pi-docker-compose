@@ -24,11 +24,3 @@ services:
     ports:
       - 19133:19133/udp
     restart: unless-stopped
-  bind9:
-    build: 
-      context: ./bind9
-      args: 
-        BCIP: 192.168.1.168
-        NSIP: 192.168.1.168
-    ports: 
-      - "53:53/udp"
